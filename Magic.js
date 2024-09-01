@@ -28,4 +28,4 @@ const magic = [
 ];
 
 let answerButton = document.createElement("button")
-answerButton.innerHTML = magic[Magic8[1]]
+answerButton.innerHTML = magic[1].Magic8
