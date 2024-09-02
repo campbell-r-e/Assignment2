@@ -1,31 +1,44 @@
 const magic = [
     {
-      Color:'Red',
+      id: 1,
+      color:'Red',
       Magic8:'Yes'
     },
-    {
-        Color:'Black',
-      Magic8:'Not likely'
+    {   id:2,
+        color:'Black',
+        Magic8:'Not likely'
     },
-    {
-      Color:'Blue',
+    { id:3,
+      color:'Blue',
       Magic8:'No'
     },{
-        Color:'Green',
+        id:4,
+        color:'Green',
       Magic8:'Maybe'
     },
-    {
-        Color:'Purple',
+    {   id:5,
+        color:'Purple',
       Magic8:'Unlikely'
     },
-    {
-        Color:'Gray',
+    {   id:6,
+        color:'Gray',
       Magic8:'No'
     }
     
 
 
 ];
+function magic8(){
+  var random=Math.floor(Math.random(1) * 6);
+for(id in magic.id){
+  if(random == id){
+    var fourtune_Display= $('#Fourtune_Display');
+    fourtune_Display.innerHTML = magic.Magic8
+   
+  }
 
-let answerButton = document.createElement("button")
-answerButton.innerHTML = magic[1].Magic8
+}
+}
+
+
+
